@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>E-Portfolio Thomas Belaid</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.0/css/boxicons.min.css"> <!-- Link to Boxicons icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+        /* Ajout d'un style pour l'élément span */
+        #role {
+            transition: opacity 0.5s ease-in-out; /* Transition fluide de l'opacité */
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-content">
+            <div class="rectangle">
+                <div class="text-center">
+                    <div class="border-top">
+                        <h1>E-Portfolio</h1>
+                        <h3>Thomas Belaid</h3>
+                    </div>
+                    <div class="border-bottom"></div>
+                </div>
+            </div>          
+        </div>
+    </div>
+
+    <header class="header">
+        <a href="#" class="logo"></i> E-Portfolio</a>
+        <nav class="navbar">
+            <a href="index.html"><i class='bx bxs-home'></i> Accueil</a> <!-- Logo accueil avec Boxicons -->
+            <a href="about.html"><i class='bx bx-slideshow'></i> Présentation</a>
+            <a href="projet.html"><i class='bx bx-library'></i> Projet</a>
+            <a href="contact.html"><i class='bx bxs-component'></i> Contact</a>
+            <a href="Rendu/CV_FR.pdf" class="btn"><i class='bx bxs-download'></i> CV</a>
+            <a href="index-English.html" class="btn"><i class='bx bx-transfer'></i> Changer de langue</a>
+        </nav>
+    </header>
+    <hr>
+    <section class="home" id="home">
+        <div class="container">
+            <h1>Bonjour, Voici Mon E-PorteFolio</h1>
+            <h1> Je suis Thomas Belaid</h1>
+            <h1> Je suis à la fois <br><span class="auto-type"></span></h1>
+            <br><br/>
+            <p> Mon e-portfolio est bien plus qu'une simple compilation de mes réalisations ; c'est une représentation organisée et réfléchie de mon parcours jusqu'à ce jour. 
+            <br><br/>
+                Conçu pour mettre en avant mes compétences, mes réalisations clés et mes expériences significatives. </p>
+        </div>
+        <div class="homeimage">
+            <img src="Image/Tête_Thomas_-_Copie-removebg-preview.png" alt="">
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings:["Alternant.","Etudiant.","Sportif.","Passionné."],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+    </script>
+</body>
+</html>
