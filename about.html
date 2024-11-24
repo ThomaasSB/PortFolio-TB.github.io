@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style2.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>E-Portfolio Thomas Belaid</title>
+</head>
+<body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#">Qui suis-je ?</a></li>
+                    <li><a href="cv.html">Mon CV</a></li>
+                    <li><a href="projet.html">Mes Projets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="about">
+        <div class="holder">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Image/Tête_Thomas.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="description">Me Concernant Je suis : </h1>
+                    <br></br>
+                    <p>Etudiant de BUT Science des Données en alternance chez Médiamétrie, je me spécialise dans l'analyse de données et la création de bases de données. Ma passion pour la programmation statistique, en particulier dans des langages comme SAS et SQL, m'a permis de développer mes compétences et de me familiariser avec les outils nécessaires pour effectuer des analyses approfondies.</p>
+                    <div class="subtitles">
+                        <p class="subtitles-links active-link" onclick="opentab('soft')">Soft Skill</p>
+                        <p class="subtitles-links" onclick="opentab('Langue')">Langue</p>
+                        <p class="subtitles-links" onclick="opentab('skills')">Centre d'intérêt</p>
+                    </div>
+                    <div class="subtitles-content active-tab" id="soft">
+                        <ul>
+                            <li><span>Programmation (Statistique et Object)</span><br>Python, R, SAS, SQL,HTML/CSS </li>
+                            <li><span>Analyse Statistique</span><br>Méthodes d'analyses</li>
+                            <li><span>Outils</span><br>Power BI, Tableau, Suite Office et Talend</li>
+                        </ul>
+                    </div>
+                    <div class="subtitles-content" id="Langue">
+                        <ul>
+                            <li><span>Français</span><br>Langue Maternelle</li>
+                            <li><span>Anglais</span><br>Niveau Scolaire CEFR B1</li>
+                            <li><span>Espanol</span><br>Niveau Scolaire CEFR A2</br></li>
+                            <li><span>latin</span><br>Quelques notions</br></li>
+                            <li><span>Italien</span><br>Quelques notions</br></li>
+                        </ul>
+                    </div>
+                    <div class="subtitles-content" id="skills">
+                        <ul> 
+                            <li><span>Sport</span><br>Musculation</br></li>
+                            <li><span>Lecture</span><br>Lecture de devellopement personnel, Roman et philosophie</b></li>
+                            <li><span>Musique</span><br>Tous styles de musiques</br></li>
+                            <li><span>Dessin</span><br>Quelques notions</br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    
+    <div id="education">
+        <div class="holder">
+            <h1 class="title">Education</h1>
+        </div>
+        <div class="timeline">
+            <div class="timebox left-container">
+                <div class="rectangle" onclick="openModal('modal1')"> <!-- Ajout de la classe 'rectangle' avec un attribut 'onclick' -->
+                    <img src="Image/logoMédiametrie.jpg">
+                    <div class="text-box">
+                        <h2>Deuxième et Troisième Années de BUT Sciences des données </h2>
+                        <small>2023-2025</small>
+                        <p>Description de l'éducation...</p>
+                    </div>
+                </div>
+                <span class="left-container-arrow"></span>
+            </div>
+            <div class="timebox right-container">
+                <div class="rectangle" onclick="openModal('modal2')"> <!-- Ajout de la classe 'rectangle' avec un attribut 'onclick' -->
+                    <img src="Image/logoiuts.jpg">
+                    <div class="text-box">
+                        <h2>Première année de BUT Sciences des données</h2>
+                        <small>2022-2023</small>
+                        <p>Description de l'éducation...</p>
+                    </div>
+                </div>
+                <span class="right-container-arrow"></span>
+            </div>
+
+            
+            <div class="timebox left-container">
+                <div class="rectangle" onclick="openModal('modal3')"> <!-- Ajout de la classe 'rectangle' avec un attribut 'onclick' -->
+                    <img src="Image/logo-SBE.png">
+                    <div class="text-box">
+                        <h2>Bac Général Spécialité (Mathématique, Physique et SVT) Option Mathématique experte</h2>
+                        <small>2019-2022</small>
+                        <p>Description de l'éducation...</p>
+                    </div>
+                </div>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modales pour chaque rectangle -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+			
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+			<h2>Présentation</h2>
+			<br><br/>
+            <p>Pendant ma deuxième année et ma Troisieme	 année en Bachelor Universitaire de Technologie (BUT) en Sciences des Données, j'ai eu l'opportunité enrichissante de suivre un programme en alternance chez Médiamétrie. Cette expérience immersive m'a permis d'appliquer mes connaissances académiques directement dans un environnement professionnel dynamique. Au cours de cette période, j'ai contribué activement à des projets passionnants liés à l'analyse et à l'interprétation des données pour répondre aux besoins spécifiques de l'entreprise. Travailler chez Médiamétrie m'a également offert une perspective concrète sur les défis réels rencontrés dans le domaine des sciences des données, tout en me permettant d'acquérir des compétences pratiques précieuses dans la manipulation et l'exploitation des données. Cette expérience combinée d'études et d'alternance m'a permis de consolider mes compétences académiques tout en développant un savoir-faire professionnel significatif dans le domaine en évolution rapide des sciences des données.</p>
+            <br><br/>
+			<h2>Présentation de mon alternance</h2>
+			<br><br/>
+			<p>Pendant mon temps au sein du département DEP chez Médiamétrie, plus précisément dans le pôle d'analyse de données Panel, j'ai eu l'opportunité de collaborer étroitement avec divers métiers liés à la gestion des données. Mon rôle impliquait la gestion de plusieurs missions, notamment l'extraction de données, la création de tableaux de bord et de rapports, l'automatisation de processus, ainsi que la rédaction de documentation et de procédures. J'ai également été responsable de tâches récurrentes visant à assurer la qualité et l'efficacité des opérations liées à l'analyse de données. Cette expérience m'a permis d'acquérir une solide expertise dans le domaine de l'analyse de données et de développer des compétences pratiques essentielles pour répondre aux besoins complexes de l'entreprise en matière de gestion et d'exploitation des données.</p>
+			<br><br/>
+			<h2>Durée</h2>
+			<br><br/>
+			<p>2 Ans (Début aout en 2023)</p>
+			<br><br/>
+			<h2>Compétences Devellopé</h2>
+			<br><br/>
+			<p>Programmation Statistique (SQL,SAS,R et python)</p>
+			<p>Automatisation (Talend,Gestionnaire de Tache,Power Automate)</p>
+			<p>Gestion de donnée (Saleforce,ETL)</p>
+			<p>Modification de Big Date (ETL)</p>
+			<br><br/>
+			<!-- Commentaire pour expliquer le lien -->
+			<a href="https://www.mediametrie.fr/fr" target="_blank">Cliquez ici pour visiter Médiametrie</a>
+
+		</div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Présentation</h2>
+			<br><br/>
+            <p>Ma première année dans le Bachelor Universitaire de Technologie (BUT) en Sciences des Données a été une expérience fascinante d'exploration et d'apprentissage dans le domaine de l'analyse de données et de l'informatique décisionnelle. Cette année initiale m'a permis de poser des bases solides pour comprendre, manipuler et interpréter les données dans divers contextes.</p>
+			<br><br/>
+			<h2>1. Introduction aux Fondamentaux de l'Informatique</h2>
+			<br><br/>
+			<p>J'ai appris des langages de programmation tels que Python et R.</p>
+			<p>J'ai été initié aux bases de données et à SQL.</p>
+			<p>J'ai compris les structures de données et les algorithmes.</p>
+			<br><br/>
+			<h2>2. Mathématiques et Statistiques</h2>
+			<br><br/>
+			<p>J'ai révisé des concepts mathématiques essentiels : algèbre, probabilités, statistiques.</p>
+			<p>J'ai utilisé des logiciels statistiques pour analyser des données.</p>
+			<br><br/>
+			<h2>3. Fondamentaux des Sciences des Données</h2>
+			<br><br/>
+			<p>J'ai révisé des concepts mathématiques essentiels : algèbre, probabilités, statistiques.</p>
+			<p>J'ai utilisé des logiciels statistiques pour analyser des données.</p>
+			<br><br/>
+			<h2>4. Introduction à la Visualisation et à la Présentation des Données</h2>
+			<br><br/>
+			<p>J'ai révisé des concepts mathématiques essentiels : algèbre, probabilités, statistiques.</p>
+			<p>J'ai utilisé des logiciels statistiques pour analyser des données.</p>
+			<br><br/>
+			<h2>5. Projet Professionnel et Personnel</h2>
+			<br><br/>
+			<p>J'ai développé des compétences transversales telles que le travail d'équipe, la communication et la gestion de projet.</p>
+			<p>J'ai exploré les différentes carrières et opportunités dans le domaine des sciences des données.</p>
+			<br><br/>
+			<a href="https://iutparis-seine.u-paris.fr/" target="_blank">Cliquez ici pour visiter IUT</a>
+
+		</div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+			<h2>Présentation</h2>
+            <br><br/>
+			<p>J'ai préalablement obtenu un baccalauréat général spécialisé en Mathématiques, Physique-Chimie et Sciences de la Vie et de la Terre (SVT), avec une option en Mathématiques approfondies. Ce cursus m'a offert une solide formation dans les matières scientifiques, en mettant particulièrement l'accent sur les mathématiques. Grâce à cette spécialisation, j'ai développé des compétences analytiques et un goût pour la résolution de problèmes complexes. Ces études m'ont préparé de manière optimale pour aborder le domaine des Sciences des Données, où la maîtrise des mathématiques et des statistiques est essentielle pour comprendre et interpréter les modèles de données. Je suis enthousiaste à l'idée de mettre à profit mes connaissances antérieures dans ce nouveau domaine passionnant et en pleine expansion.</p>
+			<br><br/>
+			<h2>Benevolats</h2>
+			<p>Dont de sang</p>
+			<p>Marrode</p>
+			<p>Création d'évévements</p>
+			<p>Cours de soutiens à des éléves</p>
+			<p>Intervention pour présenter ma formation</p>
+			<br><br/>
+			<a href="https://iutparis-seine.u-paris.fr/" target="_blank">Cliquez ici pour visiter IUT</a>
+		</div>
+    </div>
+    <hr>
+    <div id="competences">
+        <div class="holder">
+            <h1 class="title">Compétences</h1>
+        </div>
+        <div class="competences-container">
+            <div class="competence" onclick="showModal('programming')">
+                <h2>Programmation </h2>
+                <p>Python, R, SAS, SQL, HTML/CSS</p>
+            </div>
+            <div class="competence" onclick="showModal('analytics')">
+                <h2>Analyse Statistique </h2>
+                <p>Méthodes de prévisions et d'analyse (ACP, Séries Temporelles, Classification et Méthodes Factorielles)</p>
+            </div>
+            <div class="competence" onclick="showModal('Outils')">
+                <h2>Outils</h2>
+                <p>Tableau, Power BI (Power Automate), Suite Office (Word, Power Point , Excel), Talend</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Fenêtres modales -->
+    <div id="programmingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('programming')">&times;</span>
+            <h2>Programmation </h2>
+            <br>
+            <p>Au cours de mon parcours académique en BUT Science des Données, j'ai eu l'opportunité d'explorer en profondeur un éventail diversifié de langages de programmation essentiels dans le domaine de l'analyse de données. De Python à R, en passant par SAS, SQL et HTML/CSS, j'ai acquis une solide base de connaissances et de compétences techniques. Cependant, c'est grâce à mon expérience pratique lors de mon alternance chez Médiamétrie que j'ai pu véritablement affiner ces compétences et les mettre en pratique dans un environnement professionnel. Cette expérience m'a offert l'occasion de travailler sur des projets concrets, d'approfondir ma compréhension des concepts et des méthodes, et de développer une approche pragmatique et efficace dans la résolution de problèmes liés à l'analyse et à la manipulation de données. En particulier, j'ai pu me spécialiser et approfondir mes compétences sur des outils spécifiques tels que SAS et SQL, ce qui m'a permis d'atteindre un niveau d'expertise avancé dans ces domaines. Ainsi, mon passage à Médiamétrie a été une étape décisive dans mon apprentissage et ma progression en tant qu'analyste de données.</p>
+            <div id="programming-skills">
+                <div class="holder">
+                    <h2 class="title"><span>Language de Programmation</span> </h2>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="percent" style="--clr:#2B4B57; --num:100;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <p>SQL</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="percent" style="--clr:#2B4B57; --num:100;">  
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <p>SAS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="percent" style="--clr:#2B4B57; --num:100;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <p>Python<i class='bx bxl-python'></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="percent" style="--clr:#2B4B57; --num:100;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <p>HTML/CSS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="analyticsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('analytics')">&times;</span>
+            <h2>Analyse Statistique  </h2>
+            <br></br>
+            <p>Pendant mes études en BUT Science des Données, j'ai consacré une partie importante de mon apprentissage à l'analyse statistique. J'ai eu l'opportunité d'explorer en profondeur diverses méthodes et techniques d'analyse, couvrant un large éventail de domaines, notamment l'Analyse en Composantes Principales (ACP), les Séries Temporelles, la Classification et les Méthodes Factorielles.</p>
+            <br></br>
+            <p>Ces connaissances théoriques ont été enrichies par mon expérience pratique chez Médiamétrie lors de mon alternance. Là-bas, j'ai pu appliquer ces méthodes d'analyse sur des données réelles, en travaillant sur des projets variés et concrets. J'ai appris à utiliser ces techniques pour identifier des tendances, découvrir des modèles cachés et produire des insights exploitables pour prendre des décisions éclairées.</p>
+            <br></br>
+            <p>Mon expérience chez Médiamétrie m'a également permis d'approfondir ma compréhension des défis et des nuances liés à l'application de ces méthodes dans un contexte professionnel. J'ai eu l'occasion de travailler en collaboration avec des experts du domaine pour résoudre des problèmes complexes et répondre aux besoins spécifiques de l'entreprise, ce qui m'a permis de perfectionner mes compétences et de développer une approche analytique plus affinée.</p>
+        </div>
+    </div>
+    
+    <div id="OutilsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('Outils')">&times;</span>
+            <h2>Outils </h2>
+            <br>
+            <div id="tableauDescription" class="tool-description">
+                <h3>Tableau :</h3>
+                <p>Logiciel d'analyse et de visualisation de données permettant de créer des tableaux de bord interactifs et des graphiques dynamiques.</p>
+                <br></br>
+            </div>
+            <div id="powerbiDescription" class="tool-description">
+                <h3>Power BI (Power Automate) :</h3>
+                <p>Suite d'outils d'analyse commerciale de Microsoft permettant de visualiser, d'analyser et de partager des données de manière intuitive. Power Automate est un service d'automatisation des flux de travail.</p>
+                <br></br>
+            </div>
+            <div id="suiteofficeDescription" class="tool-description">
+                <h3>Suite Office (Word, Power Point, Excel) :</h3>
+                <p>Ensemble de logiciels de Microsoft incluant Word (traitement de texte), Power Point (création de présentations) et Excel (application de tableur), largement utilisés dans le milieu professionnel.</p>
+                <br></br>
+            </div>
+            <div id="talendDescription" class="tool-description">
+                <h3>Talend :</h3>
+                <p>Plateforme d'intégration de données open source permettant de collecter, transformer et charger des données à partir de différentes sources, avec des fonctionnalités avancées de nettoyage et d'analyse.</p>
+                <br></br>
+
+                <div id="programming-skills">
+                    <div class="holder">
+                        <h1 class="title"><span>Outils</span> </h1>
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="percent" style="--clr:#2B4B57; --num:100;">
+                                    <div class="dot"></div>
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div class="number">
+                                        <p>Talend </a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="percent" style="--clr:#2B4B57; --num:100;">  
+                                    <div class="dot"></div>
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div class="number">
+                                        <p>Power BI</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="percent" style="--clr:#2B4B57; --num:100;">
+                                    <div class="dot"></div>
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div class="number">
+                                        <p>Tableau</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="percent" style="--clr:#2B4B57; --num:100;">
+                                    <div class="dot"></div>
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div class="number">
+                                        <p>Office</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <footer>
+        <p>Site créé par Thomas Belaid © 2024</p>
+    </footer>
+    
+    <script>
+        function showModal(modalId) {
+            var modal = document.getElementById(modalId + 'Modal');
+            modal.style.display = 'block';
+        }
+    
+        function closeModal(modalId) {
+            var modal = document.getElementById(modalId + 'Modal');
+            modal.style.display = 'none';
+        }
+    
+        window.onclick = function(event) {
+            var modals = document.getElementsByClassName('modal');
+            for (var i = 0; i < modals.length; i++) {
+                if (event.target == modals[i]) {
+                    modals[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+    <script>
+        var subtitleslinks = document.getElementsByClassName("subtitles-links");
+        var subtitlescontents = document.getElementsByClassName("subtitles-content");
+        function opentab(tabname){
+            for(subtitleslink of subtitleslinks){
+                subtitleslink.classList.remove("active-link");
+            }
+            for (subtitlescontent of subtitlescontents) {
+                subtitlescontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");           
+        }
+    </script>
+
+    <script>
+        // Fonction pour ouvrir une fenêtre modale spécifique
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = 'block';
+            }
+        }
+
+        // Fonction pour fermer une fenêtre modale spécifique
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+    
+</body>
+</html>
