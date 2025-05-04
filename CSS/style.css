@@ -1,229 +1,229 @@
-/* Réinitialisation des marges et paddings par défaut */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    /* Réinitialisation des marges et paddings par défaut */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-/* Paramètres généraux */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f5f7;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    text-align: center;
-}
-
-header {
-    background: linear-gradient(90deg, #333, #555);
-    padding: 1em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.1em;
-    transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
-    color: #d32f2f;
-}
-
-/* Effet de survol sur tout le profil */
-.profile-section {
-    position: relative;
-    margin-top: 4em;
-    padding: 3em;
-    background-color: #fff;
-    width: 90%;
-    max-width: 800px;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-left: auto;
-    margin-right: 7%;
-}
-
-.profile-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Effet de survol avec ombre */
-}
-
-/* Effet de survol sur le profil */
-.profile {
-    display: flex;
-    align-items: center;
-    gap: 2em;
-    text-align: left;
-    position: relative;
-    z-index: 1;
-    transition: transform 0.3s ease;
-}
-
-.profile:hover {
-    transform: translateY(-5px); /* Effet de flottement sur tout le profil */
-}
-
-.avatar {
-    width: 350px;
-    height: 600px;
-    position: absolute;
-    top: -30px;
-    left: -500px;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-}
-
-.profile:hover .avatar {
-    transform: scale(1.05); /* Effet de zoom sur l'avatar */
-}
-
-.profile-info {
-    margin-left: 8em;
-    transition: transform 0.3s ease;
-}
-
-.profile-info:hover {
-    transform: translateY(-5px); /* Effet de flottement sur le texte */
-}
-
-.profile h1 {
-    font-size: 2em;
-    color: #333;
-    transition: color 0.3s ease;
-}
-
-.profile h1:hover {
-    color: #d32f2f; /* Change la couleur au survol */
-}
-
-.name-highlight {
-    color: #d32f2f;
-    transition: color 0.3s ease;
-}
-
-.tagline {
-    font-size: 1.1em;
-    color: #555;
-    margin: 0.5em 0;
-    font-style: italic;
-}
-
-.details {
-    list-style: none;
-    margin-top: 1.5em;
-    font-size: 1.1em;
-    color: #333;
-}
-
-.details li {
-    margin: 0.8em 0;
-    display: flex;
-    align-items: center;
-    transition: transform 0.3s ease;
-}
-
-.details li:hover {
-    transform: translateY(-3px); /* Effet de flottement au survol des éléments de la liste */
-}
-
-.details li::before {
-    content: '•';
-    color: #d32f2f;
-    margin-right: 0.5em;
-    font-size: 1.5em;
-}
-
-/* Style général pour toutes les images */
-.social-links img {
-    display: inline-block; /* S'assurer que les images respectent les dimensions données */
-    width: 30px; /* Taille par défaut (modifiable pour chaque image) */
-    height: 30px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-/* Style spécifique à l'image GitHub */
-#github-img {
-    width: 30px; /* Taille spécifique à GitHub */
-    height: 30px;
-    border-radius: 10px; /* Coins arrondis */
-    background-color: #f5f5f5; /* Couleur de fond personnalisée */
-}
-    
-/* Style spécifique à l'image LinkedIn */
-#linkedin-img {
-    width: 40px; /* Taille spécifique à LinkedIn */
-    height: 40px;
-    margin-top: 20px;
-    border-radius: 10px; /* Coins arrondis */
-    padding: 2px; /* Espacement intérieur */
-}
-
-/* Effets au survol (individuellement si souhaité) */
-#github-img:hover {
-    transform: scale(1.1);
-    background-color: #333; /* Fond sombre au survol */
-}
-
-#linkedin-img:hover {
-    transform: scale(1.1);
-    border-color: #005582; /* Change la bordure au survol */
-}
-
-
-footer {
-    margin-top: 3em;
-    padding: 1.5em;
-    background-color: #333;
-    color: #fff;
-    font-size: 0.9em;
-    width: 100%;
-    text-align: center;
-}
-
-/* 
-==============================
-Responsivité (pour mobile)
-==============================
-*/
-@media (max-width: 768px) {
-    .profile {
+    /* Paramètres généraux */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f5f7;
+        color: #333;
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
         text-align: center;
     }
 
-    .avatar {
-        margin-bottom: 1em;
-    }
-
-    .profile-info {
-        margin-left: 0;
-    }
-
-    .details {
-        font-size: 1em;
+    header {
+        background: linear-gradient(90deg, #333, #555);
+        padding: 1em;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
     }
 
     header nav ul {
-        flex-direction: column;
-        gap: 1em;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 2em;
     }
-}
+
+    header nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.1em;
+        transition: color 0.3s ease;
+    }
+
+    header nav ul li a:hover {
+        color: #d32f2f;
+    }
+
+    /* Effet de survol sur tout le profil */
+    .profile-section {
+        position: relative;
+        margin-top: 4em;
+        padding: 3em;
+        background-color: #fff;
+        width: 90%;
+        max-width: 800px;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin-left: auto;
+        margin-right: 7%;
+    }
+
+    .profile-section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Effet de survol avec ombre */
+    }
+
+    /* Effet de survol sur le profil */
+    .profile {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        text-align: left;
+        position: relative;
+        z-index: 1;
+        transition: transform 0.3s ease;
+    }
+
+    .profile:hover {
+        transform: translateY(-5px); /* Effet de flottement sur tout le profil */
+    }
+
+    .avatar {
+        width: 350px;
+        height: 600px;
+        position: absolute;
+        top: -30px;
+        left: -500px;
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+    }
+
+    .profile:hover .avatar {
+        transform: scale(1.05); /* Effet de zoom sur l'avatar */
+    }
+
+    .profile-info {
+        margin-left: 8em;
+        transition: transform 0.3s ease;
+    }
+
+    .profile-info:hover {
+        transform: translateY(-5px); /* Effet de flottement sur le texte */
+    }
+
+    .profile h1 {
+        font-size: 2em;
+        color: #333;
+        transition: color 0.3s ease;
+    }
+
+    .profile h1:hover {
+        color: #d32f2f; /* Change la couleur au survol */
+    }
+
+    .name-highlight {
+        color: #d32f2f;
+        transition: color 0.3s ease;
+    }
+
+    .tagline {
+        font-size: 1.1em;
+        color: #555;
+        margin: 0.5em 0;
+        font-style: italic;
+    }
+
+    .details {
+        list-style: none;
+        margin-top: 1.5em;
+        font-size: 1.1em;
+        color: #333;
+    }
+
+    .details li {
+        margin: 0.8em 0;
+        display: flex;
+        align-items: center;
+        transition: transform 0.3s ease;
+    }
+
+    .details li:hover {
+        transform: translateY(-3px); /* Effet de flottement au survol des éléments de la liste */
+    }
+
+    .details li::before {
+        content: '•';
+        color: #d32f2f;
+        margin-right: 0.5em;
+        font-size: 1.5em;
+    }
+
+    /* Style général pour toutes les images */
+    .social-links img {
+        display: inline-block; /* S'assurer que les images respectent les dimensions données */
+        width: 30px; /* Taille par défaut (modifiable pour chaque image) */
+        height: 30px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    /* Style spécifique à l'image GitHub */
+    #github-img {
+        width: 30px; /* Taille spécifique à GitHub */
+        height: 30px;
+        border-radius: 10px; /* Coins arrondis */
+        background-color: #f5f5f5; /* Couleur de fond personnalisée */
+    }
+        
+    /* Style spécifique à l'image LinkedIn */
+    #linkedin-img {
+        width: 40px; /* Taille spécifique à LinkedIn */
+        height: 40px;
+        margin-top: 20px;
+        border-radius: 10px; /* Coins arrondis */
+        padding: 2px; /* Espacement intérieur */
+    }
+
+    /* Effets au survol (individuellement si souhaité) */
+    #github-img:hover {
+        transform: scale(1.1);
+        background-color: #333; /* Fond sombre au survol */
+    }
+
+    #linkedin-img:hover {
+        transform: scale(1.1);
+        border-color: #005582; /* Change la bordure au survol */
+    }
+
+
+    footer {
+        margin-top: 3em;
+        padding: 1.5em;
+        background-color: #333;
+        color: #fff;
+        font-size: 0.9em;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* 
+    ==============================
+    Responsivité (pour mobile)
+    ==============================
+    */
+    @media (max-width: 768px) {
+        .profile {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .avatar {
+            margin-bottom: 1em;
+        }
+
+        .profile-info {
+            margin-left: 0;
+        }
+
+        .details {
+            font-size: 1em;
+        }
+
+        header nav ul {
+            flex-direction: column;
+            gap: 1em;
+        }
+    }
