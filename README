@@ -1,0 +1,230 @@
+# 🚀 Portfolio Thomas Belaid - Data Scientist
+
+Bienvenue sur le repository de mon portfolio professionnel ! Ce site web moderne présente mon parcours en data science, mes compétences techniques et mes projets académiques et professionnels.
+
+## 📋 Table des matières
+
+- [À propos](#à-propos)
+- [Technologies utilisées](#technologies-utilisées)
+- [Structure du projet](#structure-du-projet)
+- [Sections du portfolio](#sections-du-portfolio)
+- [Projets présentés](#projets-présentés)
+- [Installation](#installation)
+- [Fonctionnalités](#fonctionnalités)
+- [Déploiement](#déploiement)
+- [Contact](#contact)
+
+## 🎯 À propos
+
+Ce portfolio interactif présente mon parcours de data scientist en formation, actuellement en BUT Science des Données en alternance chez Médiamétrie. Il met en avant mes compétences techniques, mon expérience professionnelle et 5 projets majeurs qui illustrent ma progression dans le domaine de la data science.
+
+**Objectifs du portfolio :**
+- Présenter mon profil professionnel de manière moderne et interactive
+- Démontrer mes compétences en data science et automatisation
+- Mettre en valeur mon expérience en alternance chez Médiamétrie
+- Offrir une navigation fluide avec mode sombre/clair
+- Créer une vitrine professionnelle complète pour recruteurs
+
+## 🛠️ Technologies utilisées
+
+### Frontend
+- **HTML5** - Structure sémantique moderne
+- **CSS3** - Styles avancés avec variables CSS et animations
+- **JavaScript** - Interactivité, modales et basculement de thème
+- **Font Awesome 6** - Iconographie professionnelle
+
+### Design & UX
+- **Design responsive** - Optimisé mobile, tablette et desktop
+- **Mode sombre/clair** - Basculement de thème dynamique
+- **Timeline interactive** - Présentation chronologique élégante
+- **Système de modales** - Détails de projets en overlay
+- **Animations CSS** - Transitions fluides et effets visuels
+
+## 📁 Structure du projet
+
+```
+portfolio/
+├── index.html              # Page principale (Single Page Application)
+├── CSS/
+│   └── style.css          # Styles principaux avec thèmes
+├── image/
+│   ├── logo.png           # Photo de profil
+│   └── CV_Belaid_Thomas_ML2.pdf
+└── README.md
+```
+
+## 🏗️ Sections du portfolio
+
+### 🏠 **Hero Section**
+- Présentation personnelle avec photo
+- Titre "Data Scientist" avec icône
+- Boutons d'action : Contact, Projets, CV
+- Design moderne et accrocheur
+
+### 👤 **À propos**
+- Informations personnelles et contact
+- Présentation du parcours académique
+- Carte d'identité professionnelle
+
+### 🎓 **Formation**
+- Timeline interactive du parcours éducatif
+- BUT Science des Données (2022-2025)
+- Baccalauréat Scientifique mention Bien
+
+### 💼 **Expérience Professionnelle**
+- Alternance Assistant Data Manager Junior chez Médiamétrie
+- Missions détaillées et compétences acquises
+- Présentation du pôle DEP et responsabilités
+
+### 🔥 **Projets**
+- Timeline de 5 projets majeurs
+- Modales détaillées pour chaque projet
+- Technologies et réalisations mises en avant
+
+### 📞 **Contact**
+- Formulaire de contact fonctionnel
+- Informations de contact complètes
+- Liens vers réseaux sociaux
+
+## 🔥 Projets présentés
+
+### 1. **Outil décisionnel de comparaison des villes françaises** (2025)
+- **Technologies :** Python, Pandas, NumPy, Folium, Streamlit, API REST
+- **Type :** Projet académique
+- **Démo live :** [city-fighting.streamlit.app](https://city-fighting.streamlit.app)
+
+### 2. **Collecte de données web avancée (Web Scraping)** (2024)
+- **Technologies :** Python, Selenium, API Adresse, Jupyter Notebook
+- **Focus :** Extraction automatisée Google Maps
+
+### 3. **Analyse prédictive des données temporelles** (2023)
+- **Technologies :** R, RStudio, Modèles ARMA & Holt-Winters
+- **Domaine :** Production d'énergie solaire
+
+### 4. **Analyse des prêts garantis post-COVID** (2023)
+- **Technologies :** R, SAS, Régression linéaire
+- **Compétences :** Gestion de projet, analyses statistiques
+
+### 5. **Automatisation de reporting - Médiamétrie** (2023-2024)
+- **Technologies :** Oracle SQL, Power BI, SAS, Power Automate
+- **Impact :** Solution complète d'automatisation BaBU
+
+## 🚀 Installation
+
+### Prérequis
+- Navigateur web moderne
+- Serveur web local (optionnel)
+
+### Installation locale
+```bash
+# Cloner le repository
+git clone https://github.com/[votre-username]/portfolio-thomas-belaid.git
+
+# Naviguer dans le dossier
+cd portfolio-thomas-belaid
+
+# Ouvrir index.html dans votre navigateur
+# Ou lancer un serveur local
+python -m http.server 8000
+# Puis aller sur http://localhost:8000
+```
+
+## ✨ Fonctionnalités
+
+- ✅ **Single Page Application** - Navigation fluide sans rechargement
+- ✅ **Mode sombre/clair** - Basculement de thème avec persistance
+- ✅ **Design responsive** - Optimisé tous appareils
+- ✅ **Timeline interactive** - Formation et projets chronologiques
+- ✅ **Modales détaillées** - Informations complètes des projets
+- ✅ **Formulaire de contact** - Communication directe par email
+- ✅ **Liens sociaux** - LinkedIn, GitHub, Twitter
+- ✅ **Téléchargement CV** - Accès direct au CV PDF
+- ✅ **Animations CSS** - Transitions et effets visuels
+- ✅ **Iconographie Font Awesome** - Interface professionnelle
+- ✅ **Navigation par ancres** - Liens internes fluides
+- ✅ **Optimisé SEO** - Meta tags et structure sémantique
+
+## 🌐 Déploiement
+
+Le portfolio est conçu pour être facilement déployable sur :
+- **GitHub Pages** ⭐ (Recommandé)
+- **Netlify**
+- **Vercel** 
+- **Hébergements web traditionnels**
+
+### Déploiement GitHub Pages
+1. Fork ce repository
+2. Aller dans Settings > Pages
+3. Sélectionner la branche `main` comme source
+4. Portfolio accessible à `https://[username].github.io/portfolio-thomas-belaid`
+
+## 🎨 Personnalisation
+
+### Couleurs et thèmes
+Le système de thème utilise des variables CSS :
+```css
+:root {
+  --primary-color: #007bff;
+  --background-color: #0a0a0a;
+  --text-color: #ffffff;
+}
+
+.light-mode {
+  --background-color: #ffffff;
+  --text-color: #333333;
+}
+```
+
+### Contenu
+- **Informations personnelles :** Modifier les sections dans `index.html`
+- **Projets :** Ajouter/modifier les modales existantes
+- **Expérience :** Adapter la section expérience professionnelle
+- **Contact :** Personnaliser les informations de contact
+
+## 📈 Évolutions futures
+
+- [ ] **Blog technique** - Section articles et tutoriels
+- [ ] **Animations GSAP** - Animations plus avancées
+- [ ] **Formulaire backend** - Traitement serveur des messages
+- [ ] **Analytics** - Suivi des visiteurs et statistiques
+- [ ] **Multilingue** - Version anglaise du portfolio
+- [ ] **CMS intégration** - Gestion de contenu dynamique
+- [ ] **Performance** - Optimisation vitesse de chargement
+
+## 📊 Statistiques du projet
+
+- **Temps de développement :** ~40 heures
+- **Lignes de code :** ~500 HTML, ~800 CSS, ~100 JavaScript
+- **Compatibilité :** Chrome, Firefox, Safari, Edge
+- **Performance :** Score Lighthouse > 90/100
+- **Responsive :** Mobile-first design
+
+## 🤝 Contributions
+
+Les contributions sont les bienvenues ! N'hésitez pas à :
+- Signaler des bugs ou problèmes
+- Proposer des améliorations
+- Suggérer de nouvelles fonctionnalités
+- Améliorer la documentation
+
+## 📞 Contact
+
+**Thomas Belaid - Data Scientist**
+- 📧 **Email :** [thomas.belaid.pro@gmail.com](mailto:thomas.belaid.pro@gmail.com)
+- 📱 **Téléphone :** [06.98.07.88.81](tel:+33698078881)
+- 💼 **LinkedIn :** [thomas-belaid-6a4095250](https://www.linkedin.com/in/thomas-belaid-6a4095250/)
+- 📍 **Localisation :** Paris, France
+- 🌐 **Portfolio :** [Votre URL de portfolio]
+
+---
+
+⭐ **Si ce portfolio vous inspire, n'hésitez pas à le star !**
+
+## 📄 Licence
+
+Ce projet est sous licence MIT. Vous êtes libre de l'utiliser, le modifier et le distribuer selon les termes de cette licence.
+
+---
+
+*Développé avec ❤️ par Thomas Belaid - Data Scientist en devenir*  
+*© 2025 - Tous droits réservés*
