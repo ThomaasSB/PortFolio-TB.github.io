@@ -1,74 +1,289 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil de Thomas Belaid</title>
-    <link rel="stylesheet" href="CSS/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thomas Belaid - Data Scientist</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-
-<header>
+  <header>
+    <div class="logo">TB</div>
     <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="about.html">Qui suis-je ?</a></li>
-            <li><a href="Rendu/CV_BELAID_THOMAS_ML.pdf">Mon CV</a></li>
-            <li><a href="projet.html">Mes Projets</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="#"><i class="fas fa-home"></i> Accueil</a></li>
+        <li><a href="#about"><i class="fas fa-user"></i> À propos</a></li>
+        <li><a href="#formation"><i class="fas fa-graduation-cap"></i> Formation</a></li>
+        <li><a href="#experience"><i class="fas fa-briefcase"></i> Expérience</a></li>
+        <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projets</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
-<section class="profile-section">
-    <div class="profile">
-        <img src="img/image-removebg-preview.png" alt="Avatar de Thomas" class="avatar">
-        <div class="profile-info">
-            <h1>Bonjour ! Je suis <span class="name-highlight">Thomas Belaid</span> 👋</h1>
-            <!-- Balise <p> vide pour l'effet de texte tapé -->
-            <p class="tagline" id="tagline"></p>
-            <ul class="details">
-                <li>✨ J'ai 20 ans.</li>
-                <li>🏡 Je réside à Paris</li>
-                <li>🎓 Je suis étudiant en Bachelor Universitaire Technologie en Science des données.</li>
-                <li>💻 Je suis en contrat d'alternance chez Médiamétrie</li>
-                <li>📞 06.98.07.88.81</li>
-                <li>✉️ thomas.belaid.pro@gmail.com</li>
-            </ul>
-            <div class="social-links">
-                <a href="https://github.com/ThomaasSB" id="github-link">
-                    <img src="Image/github.png" alt="GitHub" id="github-img">
-                </a>
-                <a href="https://www.linkedin.com/in/thomas-belaid-6a4095250/" id="linkedin-link">
-                    <img src="Image/Linkdin.webp" alt="LinkedIn" id="linkedin-img">
-                </a>
-            </div>            
-        </div>
+  <main class="hero">
+    <img src="image/logo.png" alt="Photo de Thomas Belaid" />
+    <div class="hero-text">
+      <h1>Thomas Belaid</h1>
+      <h2><i class="fas fa-chart-line"></i> Data Scientist</h2>
+      <p>Passionné par l'analyse de données et la création d'expériences numériques innovantes.</p>
+      <div class="buttons">
+        <a href="mailto:thomas.belaid.pro@gmail.com" class="btn primary"><i class="fas fa-paper-plane"></i> Me contacter</a>
+        <a href="#projects" class="btn outline"><i class="fas fa-folder-open"></i> Voir mes projets</a>
+        <a href="image/CV_Belaid_Thomas_ML2.pdf" class="btn primary" download><i class="fas fa-file-pdf"></i> CV</a>
+      </div>
     </div>
-</section>
+  </main>
 
-<footer>
-    <p>Site créé par Thomas Belaid © 2024</p>
-</footer>
+  <section id="about" class="about">
+    <h2><i class="fas fa-address-card"></i> À propos de moi</h2>
+    <div class="about-cards">
+      <div class="card">
+        <p><i class="fas fa-birthday-cake"></i> J'ai 20 ans.</p>
+        <p><i class="fas fa-home"></i> Je réside à Paris</p>
+        <p><i class="fas fa-graduation-cap"></i> Étudiant en BUT Science des Données</p>
+        <p><i class="fas fa-laptop-code"></i> Alternance chez Médiamétrie</p>
+        <p><i class="fas fa-phone"></i> 06.98.07.88.81</p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:thomas.belaid.pro@gmail.com">thomas.belaid.pro@gmail.com</a></p>
+      </div>
+      <div class="card">
+        <p><strong><i class="fas fa-question-circle"></i> Qui suis-je ?</strong></p>
+        <p>Étudiant de BUT Science des Données, spécialisé en analyse et gestion de base de données. Passionné de statistiques, j'utilise SAS & SQL dans un cadre professionnel chez Médiamétrie.</p>
+      </div>
+    </div>
+  </section>
 
-<!-- JavaScript pour l'effet de texte tapé -->
-<script>
-    // Texte à afficher avec l'effet de texte tapé
-    const text = "Je suis Assistant Data Manager Chez Mediametrie";
-    const taglineElement = document.getElementById("tagline");
-    let index = 0;
+  <section id="formation" class="formation">
+    <h2><i class="fas fa-graduation-cap"></i> Formation</h2>
+    <div class="timeline">
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3><i class="fas fa-university"></i> BUT Sciences des Données</h3>
+          <p>Première année en parcours initial<br>Anciennement STID (Statistique et Informatique Décisionnelle)</p>
+        </div>
+        <div class="timeline-date">2022-2023</div>
+      </div>
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3><i class="fas fa-university"></i> BUT Sciences des Données</h3>
+          <p>Deuxième et troisième année en alternance<br>Assistant Data Manager Junior chez Médiamétrie</p>
+        </div>
+        <div class="timeline-date">2023-2025</div>
+      </div>
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3><i class="fas fa-school"></i> Baccalauréat Scientifique</h3>
+          <p>Mention Bien<br>Spécialités : Mathématiques, Physique-Chimie<br>Option : Mathématiques Expertes</p>
+        </div>
+        <div class="timeline-date">2022</div>
+      </div>
+    </div>
+  </section>
 
-    function typeText() {
-        if (index < text.length) {
-            taglineElement.innerHTML += text.charAt(index);
-            index++;
-            setTimeout(typeText, 100); // Ajustez la vitesse ici (en ms)
+  <section id="experience" class="experience">
+    <h2><i class="fas fa-briefcase"></i> Expérience Professionnelle</h2>
+    <div class="experience-content">
+      <div class="experience-header">
+        <h3><i class="fas fa-suitcase"></i> Assistant Data Manager Junior</h3>
+        <small><span class="company-name">Médiamétrie - Paris | 2023-2025 </span></small>
+      </div>      
+      <div class="experience-body">
+        <h4><i class="fas fa-info-circle"></i> Présentation</h4>
+        <p>
+          Pendant ma deuxième et troisième année de BUT en Science des Données, j'ai suivi un programme en alternance chez Médiamétrie. J’y ai appliqué mes connaissances dans un environnement professionnel dynamique.
+        </p>
+        <p>
+          J’ai participé à des projets liés à l’analyse de données et l'interprétation statistique pour répondre aux besoins métiers. Cette expérience m’a permis d’acquérir des compétences concrètes sur le terrain.
+        </p>
+        <p>
+          L'alternance a renforcé mes acquis académiques et m’a préparé à des enjeux réels dans un secteur en évolution rapide.
+        </p>
+
+        <h4><i class="fas fa-info-circle"></i> Présentation de mon alternance</h4>
+        <p>
+          Intégré dans l’équipe DEP (Pôle analyse Panel), j’ai géré diverses missions : extraction de données, création de dashboards, automatisation de processus, documentation...
+        </p>
+        <p>
+          Responsable de tâches récurrentes, j’ai acquis une expertise en analyse statistique et outils professionnels comme SAS et SQL.
+        </p>
+
+        <h4><i class="fas fa-tasks"></i> Missions principales</h4>
+        <ul>
+          <li><i class="fas fa-database"></i> Gestion des bases de données pour le panel de consommation TV et vidéo.</li>
+          <li><i class="fas fa-exchange-alt"></i> Extraction, transformation, et analyse de données via SAS et SQL.</li>
+          <li><i class="fas fa-sync-alt"></i> Automatisation des reporting internes et externes.</li>
+          <li><i class="fas fa-users"></i> Collaboration avec les équipes métiers et techniques.</li>
+          <li><i class="fas fa-file-alt"></i> Rédaction et mise à jour de la documentation technique.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2><i class="fas fa-project-diagram"></i> Projets</h2>
+    <div class="timeline">
+      <div class="timeline-item left" onclick="showModal('modal1')">
+        <div class="timeline-content">
+          <h3><i class="fas fa-chart-line"></i> Développement d’un outil décisionnel de comparaison des villes françaises</h3>
+        </div>
+        <div class="timeline-date">2025</div>
+      </div>
+      <div class="timeline-item right" onclick="showModal('modal2')">
+        <div class="timeline-content">
+          <h3><i class="fas fa-spider"></i> Collecte de données web avancée (Web Scraping)</h3>
+        </div>
+        <div class="timeline-date">2024</div>
+      </div>
+      <div class="timeline-item left" onclick="showModal('modal3')">
+        <div class="timeline-content">
+          <h3><i class="fas fa-solar-panel"></i> Analyse prédictive des données temporelles</h3>
+        </div>
+        <div class="timeline-date">2023</div>
+      </div>
+      <div class="timeline-item right" onclick="showModal('modal4')">
+        <div class="timeline-content">
+          <h3><i class="fas fa-hand-holding-usd"></i> Analyse des prêts garantis par l'État post-COVID</h3>
+        </div>
+        <div class="timeline-date">2023</div>
+      </div>
+      <div class="timeline-item left" onclick="showModal('modal5')">
+        <div class="timeline-content">
+          <h3><i class="fas fa-robot"></i> Automatisation de reporting - Base Usage Base Adresses</h3>
+        </div>
+        <div class="timeline-date">2023-2024</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2><i class="fas fa-address-book"></i> Contact</h2>
+    <div class="contact-section">
+      <div class="contact-info">
+        <h3><i class="fas fa-info-circle"></i> Informations de contact</h3>
+        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:thomas.belaid.pro@gmail.com">thomas.belaid.pro@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i> Téléphone: <a href="tel:+33698078881">06.98.07.88.81</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> Localisation: Paris, France</p>
+        <p><i class="fas fa-link"></i> Retrouvez-moi sur: <a href="https://www.linkedin.com/in/thomas-belaid-6a4095250/" target="_blank">LinkedIn</a></p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/thomas-belaid-6a4095250/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3><i class="fas fa-paper-plane"></i> Envoyez-moi un message</h3>
+        <form action="mailto:thomas.belaid.pro@gmail.com" method="post" enctype="text/plain">
+          <input type="text" name="name" placeholder="Nom" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="url" name="link" placeholder="Lien (optionnel)">
+          <textarea name="message" placeholder="Message" rows="5" required></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Thomas Belaid. Tous droits réservés.</p>
+  </footer>
+
+  <div class="theme-toggle">
+    <button onclick="toggleTheme()"><i id="theme-icon" class="fas fa-moon"></i></button>
+  </div>
+
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="document.getElementById('modal1').style.display='none'">&times;</span>
+      <h2><i class="fas fa-chart-line"></i> Développement d’un outil décisionnel de comparaison des villes françaises</h2>
+      <p><strong>Période :</strong> Mars - Avril 2025</p>
+      <p><strong>Type :</strong> Projet académique</p>
+      <p><strong>Description :</strong> Conception et développement d'une application web interactive permettant d'analyser et de comparer les villes françaises selon de multiples critères socio-économiques et géographiques.</p>
+      <p><strong>Technologies maîtrisées :</strong> Python, Pandas, NumPy, Folium, Streamlit, API REST</p>
+      <p><strong>Réalisations clés :</strong> Interface utilisateur intuitive, visualisations cartographiques dynamiques, traitement automatisé de données multi-sources, déploiement en ligne de l'application.</p>
+      <p><a href="https://city-fighting.streamlit.app" target="_blank"><i class="fas fa-link"></i> Lien vers l'outil</a></p>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="document.getElementById('modal2').style.display='none'">&times;</span>
+      <h2><i class="fas fa-spider"></i> Collecte de données web avancée (Web Scraping)</h2>
+      <p><strong>Période :</strong> 2024</p>
+      <p><strong>Type :</strong> Projet technique</p>
+      <p><strong>Description :</strong> Développement d'un système automatisé d'extraction de données à partir de Google Maps pour analyser les informations d'entreprises locales.</p>
+      <p><strong>Technologies maîtrisées :</strong> Python, Selenium, API Adresse, Jupyter Notebook</p>
+      <p><strong>Réalisations clés :</strong> Extraction automatisée de données géographiques, gestion robuste des exceptions, documentation technique complète.</p>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="document.getElementById('modal3').style.display='none'">&times;</span>
+      <h2><i class="fas fa-solar-panel"></i> Analyse prédictive des données temporelles</h2>
+      <p><strong>Période :</strong> 2023</p>
+      <p><strong>Type :</strong> Projet d'analyse statistique</p>
+      <p><strong>Description :</strong> Analyse approfondie de l'évolution de la production d'énergie solaire avec développement de modèles prédictifs.</p>
+      <p><strong>Technologies maîtrisées :</strong> R, RStudio, Modèles ARMA & Holt-Winters</p>
+      <p><strong>Réalisations clés :</strong> Identification des tendances et patterns saisonniers, développement de modèles prédictifs fiables.</p>
+    </div>
+  </div>
+
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="document.getElementById('modal4').style.display='none'">&times;</span>
+      <h2><i class="fas fa-hand-holding-usd"></i> Analyse des prêts garantis par l'État post-COVID</h2>
+      <p><strong>Période :</strong> Janvier - Juin 2023</p>
+      <p><strong>Type :</strong> Projet de recherche appliquée</p>
+      <p><strong>Description :</strong> Projet d'envergure combinant gestion de projet et analyse statistique approfondie des données relatives aux prêts garantis par l'État durant la crise sanitaire.</p>
+      <p><strong>Compétences démontrées :</strong> Gestion de projet, Analyse statistique, R & SAS, Régression linéaire</p>
+      <p><strong>Réalisations clés :</strong> Direction d'équipe selon la méthodologie Waterfall, analyses sectorielles et géographiques approfondies.</p>
+    </div>
+  </div>
+
+  <div id="modal5" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="document.getElementById('modal5').style.display='none'">&times;</span>
+      <h2><i class="fas fa-robot"></i> Automatisation de reporting - Base Usage Base Adresses</h2>
+      <p><strong>Période :</strong> 2023-2024</p>
+      <p><strong>Type :</strong> Projet professionnel (Alternance chez Médiamétrie)</p>
+      <p><strong>Description :</strong> Conception et mise en œuvre d'une solution complète d'automatisation pour le reporting de la base de données BaBU.</p>
+      <p><strong>Technologies maîtrisées :</strong> Oracle SQL, Power BI, SAS, Power Automate</p>
+      <p><strong>Réalisations clés :</strong> Automatisation complète du processus de reporting, interface utilisateur intuitive pour les collaborateurs.</p>
+    </div>
+  </div>
+
+  <script>
+    function showModal(modalId) {
+      var modal = document.getElementById(modalId);
+      modal.style.display = "block";
+
+      var spans = document.getElementsByClassName("close");
+      for (var i = 0; i < spans.length; i++) {
+        spans[i].onclick = function() {
+          modal.style.display = "none";
         }
+      }
+
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
     }
 
-    // Lancer l'effet lorsque la page est chargée
-    window.onload = typeText;
-</script>
+    function toggleTheme() {
+      const body = document.body;
+      const themeIcon = document.getElementById('theme-icon');
+      body.classList.toggle('dark-mode');
 
+      if (body.classList.contains('dark-mode')) {
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+      } else {
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+      }
+    }
+  </script>
 </body>
 </html>
